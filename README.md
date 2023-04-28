@@ -10,7 +10,9 @@ Use pytest, unit test, Robo framework : for testing
 
 Use pylint : One way to test the architecture of a Python application is to use a tool like PyLint to analyze the code for adherence to coding standards and best practices
 
-
+Analysis Testing :  use a tool like coverage to measure the code coverage of your tests.
+eg:- coverage run test_example.py.
+ You can then use the coverage report command to see the code coverage results.
 </i>
 </b>
 </h5>
