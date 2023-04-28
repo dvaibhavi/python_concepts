@@ -1,4 +1,8 @@
 # decorator function to capitalize names
+
+import cProfile
+import pstats
+
 def names_decorator(function):
    def wrapper(arg1, arg2, arg3):
        arg1 = arg1.upper()
@@ -64,3 +68,11 @@ x.__next__()    # output => 8
 ## iterating using loop
 for i in fib(10):
    print(i)    # output => 0 1 1 2 3 5 8
+
+
+cProfile.run('fib(2000)', 'my_profile.prof')
+
+with open('stats.txt', 'w') as f:
+    stats = pstats.Stats('my_profile.prof', stream=f)
+    stats.sort_stats('cumulative')
+    stats.print_stats()
