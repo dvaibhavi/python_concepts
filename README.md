@@ -51,6 +51,8 @@ We can then start the load test and monitor the performance of the application u
 By analyzing the load test results, we can identify performance bottlenecks and make improvements to the application to ensure it can handle the expected load.
 
 eg:- locust -f load_testing.py 
+<br>
+<br>
 [2023-04-28 15:05:50,237] EPPLWARW01BE/INFO/locust.main: Starting web interface at http://0.0.0.0:8089 (accepting connections from all network interfaces)
 [2023-04-28 15:05:50,242] EPPLWARW01BE/INFO/locust.main: Starting Locust 2.15.1
 KeyboardInterrupt
