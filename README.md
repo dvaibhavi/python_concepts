@@ -1,6 +1,6 @@
 # python_concepts
 Load testing is a technique used to test the performance of an application under different levels of load, i.e., to measure how well the application performs under heavy traffic or usage. In Python, we can use various tools to create and run load tests on an application. Here's an example using the Locust load testing framework:
-<h5> 
+<h2> 
 <b>
 <i>
 
@@ -15,7 +15,7 @@ eg:- coverage run test_example.py.
  You can then use the coverage report command to see the code coverage results.
 </i>
 </b>
-</h5>
+</h2>
 <div>
 <p>
 from locust import HttpUser, task, between
