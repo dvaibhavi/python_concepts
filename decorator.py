@@ -18,7 +18,7 @@ class ToppingDecorator(Pizza):
         return self.pizza.get_cost()
 
     def get_description(self):
-        return self.pizza.get_description()
+        return f"{self.pizza.get_description()}, {self.description}"
 
 class Pepperoni(ToppingDecorator):
     def __init__(self, pizza):
@@ -37,7 +37,9 @@ class Mushroom(ToppingDecorator):
         return self.pizza.get_cost() + 1
 
 pizza = Pizza()
+print(pizza.get_description())
 pizza = Pepperoni(pizza)
+print(pizza.get_description())
 pizza = Mushroom(pizza)
 
 print(pizza.get_description()) # Output: Plain pizza, Pepperoni, Mushroom
