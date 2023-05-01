@@ -11,6 +11,8 @@ def names_decorator(function):
        string_hello = function(arg1, arg2, arg3)
        return string_hello
    return wrapper
+
+
 @names_decorator
 def say_hello(name1, name2, message):
    return 'Hello ' + name1 + '! Hello ' + name2 + '!' + message
